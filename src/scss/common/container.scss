@@ -1,0 +1,8 @@
+.container {
+  margin: 0 auto;
+  width: 280px;
+
+  @include media(desktop) {
+    width: 1200px;
+  }
+}
