@@ -13,19 +13,163 @@
     />
     
     <script type="module" crossorigin src="/stp-8590/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/stp-8590/assets/index-3f8e5ac0.css">
+    <link rel="stylesheet" href="/stp-8590/assets/index-1a376453.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">header</div>
+  <div class="container header-container">
+    <div class="logo-img-container">
+      <a href="#enter-candy-the-kingdom">
+        <picture>
+          <source
+            srcset="
+              ../img/header/LogoDesc.png    1x,
+              ../img/header/LogoDesc@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img
+            src="../img/header/Logo.png"
+            srcset="../img/header/Logo@2x.png 2x"
+            alt="Logo"
+            class="logo-img"
+          />
+        </picture>
+      </a>
+    </div>
+
+    <div class="menu-icon-container">
+      <button type="button" class="open-nav-btn">
+        <svg class="icon-elem" width="40" height="40">
+          <use href="../img/header/symbol-defs.svg#icon-Vector"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="menu-nav-container">
+      <nav class="navigation-menu">
+        <ul class="list-nav-menu">
+          <li class="nav-elem">
+            <a href="#enter-candy-the-kingdom">Enter Candy the Kingdom</a>
+          </li>
+          <li class="nav-elem">
+            <a href="#sweetest-matching-fun">Sweet Match Fun</a>
+          </li>
+          <li class="nav-elem">
+            <a href="#feature-of-kingdom">Feature of Kingdom</a>
+          </li>
+          <li class="nav-elem">
+            <a href="#endless-candy-levels">Endless Candy Levels</a>
+          </li>
+          <li class="nav-elem">
+            <a href="#relax-with-candy-jazz">Relax with Candy Jazz</a>
+          </li>
+          <li class="nav-elem">
+            <a href="#join-the-candy-crew">Join the Candy Crew</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="mobile-menu-overlay hidden"></div>
+  <div class="mobile-menu hidden">
+    <button type="button" class="close-btn">
+      <svg class="icon-elem-btn" width="40" height="40">
+        <use
+          href="../img/header/symbol-defs.svg#icon-Vector-2"
+          width="32"
+          height="32"
+        ></use>
+        <use
+          href="../img/header/symbol-defs.svg#icon-Vector-1"
+          x="9"
+          y="9"
+          width="14"
+          height="14"
+        ></use>
+      </svg>
+    </button>
+    <div class="mobile-menu-nav-container">
+      <nav class="mobile-navigation-menu">
+        <ul class="list-nav-mobile-menu">
+          <li class="mob-nav-elem">
+            <a class="link-nav" href="#enter-candy-the-kingdom"
+              >Enter Candy the Kingdom</a
+            >
+          </li>
+          <li class="mob-nav-elem">
+            <a class="link-nav" href="#sweetest-matching-fun"
+              >Sweet Match Fun</a
+            >
+          </li>
+          <li class="mob-nav-elem">
+            <a class="link-nav" href="#feature-of-kingdom"
+              >Feature of Kingdom</a
+            >
+          </li>
+          <li class="mob-nav-elem">
+            <a class="link-nav" href="#endless-candy-levels"
+              >Endless Candy Levels</a
+            >
+          </li>
+          <li class="mob-nav-elem">
+            <a class="link-nav" href="#relax-with-candy-jazz"
+              >Relax with Candy Jazz</a
+            >
+          </li>
+          <li class="mob-nav-elem">
+            <a class="link-nav" href="#join-the-candy-crew"
+              >Join the Candy Crew</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>
 
 
+
     <main>
-      <section class="hero">
-  <div class="container">hero</div>
+      <section class="hero" id="enter-candy-the-kingdom">
+  <div class="container hero-container">
+    <div class="titles-container">
+      <h1 class="title-enter-candy">Enter the Candy Kingdom</h1>
+      <h2 class="title-your-kingdom">Your Candy Kingdom Adventure Begins!</h2>
+    </div>
+
+    <div class="content-join">
+      <h3 class="title-crush-candies">
+        Crush candies and explore a world of sweet fun!
+      </h3>
+      <p class="main-text">
+        Join the candy fairy on a magical journey through thousands of sweet
+        levels. Get ready for a sugar rush of fun!
+      </p>
+      <button class="btn-join" type="button">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.cocogames.candymatchroyal&hl=en&gl=us"
+          ><div class="btn-content">
+            <div class="image-btn">
+              <svg class="icon-play-svg" width="21" height="24">
+                <use href="../img/header/symbol-defs.svg#icon-Playstore"></use>
+              </svg>
+            </div>
+            <div class="content-btn-text">
+              get it on
+              <svg class="icon-text-svg" width="74" height="15">
+                <use href="../img/header/symbol-defs.svg#icon-path90"></use>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </button>
+    </div>
+  </div>
+  
 </section>
-      <section class="sweetest">
+
+      <section class="sweetest" id="sweetest-matching-fun">
   <div class="container sweetest-container">
     <h2 class="section-title sweetest-title">Sweetest Matching Fun</h2>
 
@@ -56,7 +200,7 @@
   </div>
 </section>
 
-      <section class="features">
+      <section class="features" id="feature-of-kingdom">
   <div class="container features-container">
     <h2 class="section-title">Kingdom of Features</h2>
     <h3 class="features-subtitle">Explore the Royal Features!</h3>
@@ -113,7 +257,7 @@
   </div>
 </section>
 
-      <section class="levels">
+      <section class="levels" id="endless-candy-levels">
   <div class="container levels-container">
     <div class="levels-text-box">
       <h2 class="levels-title section-title">Endless Candy Levels</h2>
@@ -164,7 +308,7 @@
   </div>
 </section>
 
-      <section class="jazz">
+      <section class="jazz" id="relax-with-candy-jazz">
   <div class="container jazz-container">
     <h2 class="section-title">Relax with Candy Jazz</h2>
 
@@ -195,7 +339,9 @@
   </div>
 </section>
 
-      <section><div class="container">Join the Candy Crew</div></section>
+      <section id="join-the-candy-crew">
+  <div class="container">Join the Candy Crew</div>
+</section>
 
     </main>
 
