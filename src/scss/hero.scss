@@ -1,0 +1,245 @@
+@keyframes fadeBackground {
+  0% {
+    background-image: url(../img/hero/welcomeSectionBefore.png),
+      linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+  }
+  100% {
+    background-image: url(../img/hero/welcomeSection.png),
+      linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+  }
+}
+
+.hero {
+  padding: 40px 20px;
+  height: 779px;
+  margin-top: 60px;
+  background-image: url(../img/hero/welcomeSectionBefore.png);
+  background-size: 100vw;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  animation: fadeBackground 2s ease-in-out forwards;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.titles-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 280px;
+}
+
+.title-enter-candy {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  background: linear-gradient(180deg, #c167ff 0%, #54317f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-your-kingdom {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: #5c3588;
+}
+
+.content-join {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title-crush-candies {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  color: #5c3588;
+}
+
+.main-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 4px;
+  color: #5c3588;
+}
+
+.btn-join {
+  visibility: hidden;
+  border: 1px solid #5c3588;
+  border-radius: 6px;
+  width: 184px;
+  height: 47px;
+  background: #ffb9d9;
+}
+
+.btn-join:hover {
+  background: linear-gradient(180deg, #fff5fc 14%, #dfb4e7 100%);
+  border: 1px solid #943db4;
+}
+
+.icon-text-svg {
+  fill: #121111;
+}
+
+.btn-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.content-btn-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 3px;
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #121111;
+}
+
+@media only screen and (min-width: 1200px) {
+  @keyframes fadeBackground {
+    0% {
+      background-image: url(../img/hero/candyKingdomBefore.png),
+        linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    }
+    100% {
+      background-image: url(../img/hero/welcomeDesc.png),
+        linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    }
+  }
+
+  .hero {
+    min-height: 779px;
+    margin-top: 86px;
+    padding: 60px 80px 80px 80px;
+    background: url(../img/hero/welcomeSection.png) no-repeat bottom center,
+      linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeBackground 2s ease-in-out forwards;
+  }
+
+  .hero-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .titles-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    width: 1040px;
+  }
+
+  .title-enter-candy {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .title-your-kingdom {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    color: #5c3588;
+  }
+
+  .content-join {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    width: 996px;
+    min-height: 84px;
+  }
+
+  .title-crush-candies {
+    font-size: 22px;
+  }
+
+  .btn-join {
+    visibility: hidden;
+    border: 1px solid #5c3588;
+    border-radius: 6px;
+    width: 184px;
+    height: 47px;
+    background: #ffb9d9;
+  }
+
+  .main-text {
+    font-size: 18px;
+    width: 616px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 1200px) {
+  @keyframes fadeBackground {
+    0% {
+      background-image: url(../img/hero/welcomeSectionBefore@2x.png),
+        linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    }
+    100% {
+      background-image: url(../img/hero/welcomeSection@2x.png),
+        linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    }
+  }
+  .hero {
+    background-image: url(../img/hero/welcomeSection@2x.png);
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1200px) {
+  @keyframes fadeBackground {
+    0% {
+      background-image: url(../img/hero/candyKingdomBefore@2x.png),
+        linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    }
+    100% {
+      background-image: url(../img/hero/welcomeDesc@2x.png),
+        linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    }
+  }
+  .hero {
+    background: url(../img/hero/welcomeDesc@2x.png) no-repeat bottom center,
+      linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    background-size: contain;
+    background-size: 100vw;
+  }
+}

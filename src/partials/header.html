@@ -1,3 +1,112 @@
 <header class="header">
-  <div class="container">header</div>
+  <div class="container header-container">
+    <div class="logo-img-container">
+      <a href="#enter-candy-the-kingdom">
+        <picture>
+          <source
+            srcset="
+              ../img/header/LogoDesc.png    1x,
+              ../img/header/LogoDesc@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img
+            src="../img/header/Logo.png"
+            srcset="../img/header/Logo@2x.png 2x"
+            alt="Logo"
+            class="logo-img"
+          />
+        </picture>
+      </a>
+    </div>
+
+    <div class="menu-icon-container">
+      <button type="button" class="open-nav-btn">
+        <svg class="icon-elem" width="40" height="40">
+          <use href="../img/header/symbol-defs.svg#icon-Vector"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="menu-nav-container">
+      <nav class="navigation-menu">
+        <ul class="list-nav-menu">
+          <li class="nav-elem">
+            <a href="#enter-candy-the-kingdom">Enter Candy the Kingdom</a>
+          </li>
+          <li class="nav-elem">
+            <a href="#sweetest-matching-fun">Sweet Match Fun</a>
+          </li>
+          <li class="nav-elem">
+            <a href="#feature-of-kingdom">Feature of Kingdom</a>
+          </li>
+          <li class="nav-elem">
+            <a href="#endless-candy-levels">Endless Candy Levels</a>
+          </li>
+          <li class="nav-elem">
+            <a href="#relax-with-candy-jazz">Relax with Candy Jazz</a>
+          </li>
+          <li class="nav-elem">
+            <a href="#join-the-candy-crew">Join the Candy Crew</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="mobile-menu-overlay hidden"></div>
+  <div class="mobile-menu hidden">
+    <button type="button" class="close-btn">
+      <svg class="icon-elem-btn" width="40" height="40">
+        <use
+          href="../img/header/symbol-defs.svg#icon-Vector-2"
+          width="32"
+          height="32"
+        ></use>
+        <use
+          href="../img/header/symbol-defs.svg#icon-Vector-1"
+          x="9"
+          y="9"
+          width="14"
+          height="14"
+        ></use>
+      </svg>
+    </button>
+    <div class="mobile-menu-nav-container">
+      <nav class="mobile-navigation-menu">
+        <ul class="list-nav-mobile-menu">
+          <li class="mob-nav-elem">
+            <a class="link-nav" href="#enter-candy-the-kingdom"
+              >Enter Candy the Kingdom</a
+            >
+          </li>
+          <li class="mob-nav-elem">
+            <a class="link-nav" href="#sweetest-matching-fun"
+              >Sweet Match Fun</a
+            >
+          </li>
+          <li class="mob-nav-elem">
+            <a class="link-nav" href="#feature-of-kingdom"
+              >Feature of Kingdom</a
+            >
+          </li>
+          <li class="mob-nav-elem">
+            <a class="link-nav" href="#endless-candy-levels"
+              >Endless Candy Levels</a
+            >
+          </li>
+          <li class="mob-nav-elem">
+            <a class="link-nav" href="#relax-with-candy-jazz"
+              >Relax with Candy Jazz</a
+            >
+          </li>
+          <li class="mob-nav-elem">
+            <a class="link-nav" href="#join-the-candy-crew"
+              >Join the Candy Crew</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>
+<script type="module" src="../js/header.js"></script>
