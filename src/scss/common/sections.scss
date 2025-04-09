@@ -1,0 +1,18 @@
+
+
+.section-title {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0 36px;
+  text-align: center;
+  background-image: url('/img/sweetest/title-stone.png'),
+    url('/img/sweetest/title-stone.png');
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url('/img/sweetest/title-stone-2x.png'),
+      url('/img/sweetest/title-stone-2x.png');
+  }
+}

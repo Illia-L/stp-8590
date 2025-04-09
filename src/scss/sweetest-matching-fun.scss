@@ -1,0 +1,71 @@
+.sweetest {
+  // padding: 40px 0 90px;
+  color: $_purple-dark;
+
+  &-container {
+    width: 320px;
+    padding: 40px 20px 90px;
+    background-image: url('../img/sweetest/road-mob.png');
+    background-size: 184px 246px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+    @media (min-resolution: 192px) {
+      background-image: url('../img/sweetest/road-mob-2x.png');
+    }
+
+    @include media(desktop) {
+      width: 1200px;
+      padding: 80px 80px 260px;
+      background-size: 816px 583px;
+      background-image: url('../img/sweetest/road-desk.png');
+
+      @media (min-resolution: 192px) {
+        background-image: url('../img/sweetest/road-desk-2x.png');
+      }
+    }
+  }
+
+  &-subtitle {
+    margin-top: 32px;
+
+    @include media(desktop) {
+      margin-top: 80px;
+    }
+  }
+
+  &-desc {
+    margin-top: 20px;
+  }
+
+  &-picture {
+    display: block;
+    width: fit-content;
+    margin-top: 45px;
+    margin-left: auto;
+  }
+
+  &-image {
+    display: block;
+    width: 116px;
+    height: 235px;
+    // box-shadow: 8px 1px 20px 0 #00000040;
+  }
+
+  @include media(desktop) {
+    &-desc {
+      margin-top: 32px;
+      width: 600px;
+    }
+
+    &-picture {
+      margin-top: -117px;
+      margin-left: 736px;
+    }
+
+    &-image {
+      width: 245px;
+      height: 500px;
+    }
+  }
+}
