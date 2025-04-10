@@ -1,0 +1,137 @@
+.join-the-candy-crew {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 40px 20px;
+  width: 100%;
+  min-height: 440px;
+  background: url(../img/joinTheCandy/joinTheCandy.png),
+    linear-gradient(180deg, rgba(242, 195, 250, 0.9) 0%, #ffecfa 59.62%);
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.join-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  width: 280px;
+  height: auto;
+}
+
+.join-title {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 40px;
+  line-height: 1.2;
+  text-align: center;
+  background: linear-gradient(180deg, #c167ff 0%, #54317f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.main-text-join {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  color: #5c3588;
+}
+
+.btn-join-candy {
+  border: 1px solid #5c3588;
+  border-radius: 6px;
+  width: 184px;
+  height: 47px;
+  background: #ffb9d9;
+}
+
+.btn-join-candy:hover {
+  background: linear-gradient(180deg, #fff5fc 14%, #dfb4e7 100%);
+  border: 1px solid #943db4;
+}
+
+.icon-text-svg {
+  fill: #121111;
+}
+
+.btn-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.content-btn-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 3px;
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #121111;
+}
+
+@media only screen and (min-width: 1200px) {
+  .join-the-candy-crew {
+    padding: 80px;
+    height: 687px;
+    background: url(../img/joinTheCandy/joinTheCandyDesc.png),
+      linear-gradient(180deg, rgba(242, 195, 250, 0.9) 0%, #ffecfa 59.62%);
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .join-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+    width: 996px;
+    margin: 0;
+  }
+
+  .join-title {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .main-text-join {
+    font-weight: 500;
+    font-size: 22px;
+    width: 616px;
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 1200px) {
+  .join-the-candy-crew {
+    background: url(../img/joinTheCandy/joinTheCandy@2x.png),
+      linear-gradient(180deg, rgba(242, 195, 250, 0.9) 0%, #ffecfa 59.62%);
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1200px) {
+  .join-the-candy-crew {
+    background: url(../img/joinTheCandy/joinTheCandyDesc@2x.png),
+      linear-gradient(180deg, rgba(242, 195, 250, 0.9) 0%, #ffecfa 59.62%);
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+}
