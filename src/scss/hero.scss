@@ -135,13 +135,13 @@
   }
 
   .hero {
-    min-height: 779px;
+    min-height: 865px;
     margin-top: 86px;
-    padding: 60px 80px 80px 80px;
+    padding: 40px 80px 80px 80px;
     background: url(../img/hero/welcomeSection.png) no-repeat bottom center,
       linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
     background-size: 100vw;
-    background-position: center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     animation: fadeBackground 2s ease-in-out forwards;
   }
