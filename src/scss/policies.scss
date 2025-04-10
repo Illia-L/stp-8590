@@ -1,0 +1,76 @@
+.policy {
+  background-color: $_pink_light;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+
+  &-container {
+    margin: 0 auto;
+    width: 320px;
+    padding: 40px 20px;
+
+    @include media(desktop) {
+      width: 1200px;
+      padding: 80px 80px 84px;
+    }
+  }
+
+  &-back {
+    display: inline-block;
+    border-radius: 6px;
+    border: 1px solid $_purple_dark;
+    width: 100%;
+    padding: 9px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: $_pink;
+
+    @include media(desktop) {
+      width: unset;
+      padding: 14px 24px;
+    }
+  }
+
+  &-title {
+    margin-top: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: $_purple_dark;
+
+    @include media(desktop) {
+      font-size: 46px;
+    }
+  }
+
+  &-section {
+    margin-top: 40px;
+  }
+
+  &-subtitle {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: $_purple_dark;
+
+    @include media(desktop) {
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+
+  &-desc,
+  &-item {
+    margin-top: 20px;
+    color: $_black;
+
+    @include media(desktop) {
+      margin-top: 24px;
+    }
+  }
+
+  &-list {
+    list-style: inside;
+  }
+}
