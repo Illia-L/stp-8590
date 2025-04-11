@@ -1,5 +1,11 @@
 .sweetest {
   color: $_purple-dark;
+  background-image: linear-gradient(
+    #a9c54c,
+    $_pink_light
+  );
+  background-size: 100% 25%;
+  background-repeat: no-repeat;
 
   &-container {
     width: 320px;
