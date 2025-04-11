@@ -59,6 +59,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.list-terms a {
+  transition: color 0.3s ease;
+}
+
+.list-terms a:hover {
+  color: #943db4;
+}
+
 .rights-container {
   display: flex;
   align-items: flex-start;
