@@ -1,5 +1,4 @@
 .features {
-  margin-top: -62px;
   color: $_purple-dark;
 
   &-container {
@@ -41,10 +40,6 @@
     @include media(desktop){
       margin-top: 32px;
     }
-  }
-
-  @include media(desktop) {
-    margin-top: -201px;
   }
 }
 

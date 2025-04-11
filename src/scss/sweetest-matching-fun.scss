@@ -1,14 +1,13 @@
 .sweetest {
-  // padding: 40px 0 90px;
   color: $_purple-dark;
 
   &-container {
     width: 320px;
-    padding: 40px 20px 90px;
+    padding: 40px 20px 28px;
     background-image: url('../img/sweetest/road-mob.png');
-    background-size: 184px 246px;
+    background-size: 297px 180px;
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: bottom 35px right 80px;
 
     @media (min-resolution: 192dpi) {
       background-image: url('../img/sweetest/road-mob-2x.png');
@@ -16,12 +15,12 @@
 
     @include media(desktop) {
       width: 1200px;
-      padding: 80px 80px 260px;
-      background-size: 816px 583px;
-      background-image: url('../img/sweetest/road-desk.png');
+      padding: 80px 80px 60px;
+      background-size: 1097px 302px;
+      background-image: url('../img/sweetest/road.png');
 
       @media (min-resolution: 192dpi) {
-        background-image: url('../img/sweetest/road-desk-2x.png');
+        background-image: url('../img/sweetest/road-2x.png');
       }
     }
   }
@@ -36,33 +35,31 @@
 
   &-desc {
     margin-top: 20px;
+
+    @include media(desktop) {
+      margin-top: 32px;
+      width: 600px;
+    }
   }
 
   &-picture {
     display: block;
     width: fit-content;
-    margin-top: 45px;
+    margin-top: 31px;
     margin-left: auto;
+
+    @include media(desktop) {
+      margin-top: -117px;
+      margin-left: 712px;
+    }
   }
 
   &-image {
     display: block;
     width: 116px;
     height: 235px;
-  }
 
-  @include media(desktop) {
-    &-desc {
-      margin-top: 32px;
-      width: 600px;
-    }
-
-    &-picture {
-      margin-top: -117px;
-      margin-left: 724px;
-    }
-
-    &-image {
+    @include media(desktop) {
       width: 245px;
       height: 500px;
     }

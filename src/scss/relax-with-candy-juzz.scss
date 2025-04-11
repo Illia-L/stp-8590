@@ -5,44 +5,27 @@
   &-container {
     width: 320px;
     padding: 20px;
-    background-image: url('/img/sweetest/jazz-candy-cube-mob.png'),
-      url('/img/sweetest/jazz-candy-heart-mob.png');
-    background-size: 60px 60px, 57px 63px;
-    background-position: bottom 77px right 20px, bottom 223px left;
+    background-image: url('/img/sweetest/jazz-candies-mob.png');
+    background-size: contain;
+    background-position: bottom 77px center;
     background-repeat: no-repeat;
 
     @media (min-resolution: 192dpi) {
-      background-image: url('/img/sweetest/jazz-candy-cube-mob-2x.png'),
-        url('/img/sweetest/jazz-candy-heart-mob-2x.png');
+      background-image: url('/img/sweetest/jazz-candies-mob-2x.png');
     }
 
     @include media(desktop) {
       width: 1200px;
       padding: 80px 80px 44px;
-      background-image: url('../img/sweetest/jazz-candy-sphere.png'),
-        url('../img/sweetest/jazz-candy-tablet.png'),
-        url('../img/sweetest/jazz-candy-cone.png'),
-        url('../img/sweetest/jazz-candy-star.png'),
-        url('../img/sweetest/jazz-candy-heart.png'),
-        url('../img/sweetest/jazz-candy-cube.png');
-      background-size: 100px 110px, 100px 110px, 100px 110px, 100px 110px,
-        100px 110px, 100px 110px;
-      background-position: bottom 207px left 80px, bottom 77px left 240px,
-        bottom 207px left 400px, bottom 77px left 560px,
-        bottom 218px right 348px, bottom 77px right 80px;
+      background-image: url('../img/sweetest/jazz-candies.png');
+      background-size: 1040px 240px;
+      background-position: bottom 77px center;
       background-repeat: no-repeat;
-      
+
       @media (min-resolution: 192dpi) {
-        background-image: url('../img/sweetest/jazz-candy-sphere-2x.png'),
-          url('../img/sweetest/jazz-candy-tablet-2x.png'),
-          url('../img/sweetest/jazz-candy-cone-2x.png'),
-          url('../img/sweetest/jazz-candy-star-2x.png'),
-          url('../img/sweetest/jazz-candy-heart-2x.png'),
-          url('../img/sweetest/jazz-candy-cube-2x.png');
+        background-image: url('../img/sweetest/jazz-candies-2x.png');
       }
     }
-
-    
   }
 
   &-subtitle {
