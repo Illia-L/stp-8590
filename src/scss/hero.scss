@@ -48,6 +48,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .title-your-kingdom {
@@ -94,7 +95,8 @@
   transition: background 0.3s ease;
 }
 
-.btn-join:hover {
+.btn-join:hover,
+.btn-join:focus {
   background: linear-gradient(180deg, #fff5fc 14%, #dfb4e7 100%);
   border: 1px solid #943db4;
 }
