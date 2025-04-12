@@ -63,7 +63,7 @@
 
   &-image-left {
     width: 219px;
-    height: 146px;
+    height: 147px;
 
     @include media(desktop) {
       margin-top: 0;
@@ -78,9 +78,8 @@
     height: 198px;
 
     @include media(desktop) {
-      margin-bottom: 13px;
-      width: 384px;
-      height: 405px;
+      width: 396px;
+      height: 424px;
     }
   }
 }

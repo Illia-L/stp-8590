@@ -62,12 +62,12 @@
 
   &-image {
     display: block;
-    width: 116px;
-    height: 235px;
+    width: 121px;
+    height: 242px;
 
     @include media(desktop) {
-      width: 245px;
-      height: 500px;
+      width: 282px;
+      height: 539px;
     }
   }
 }
