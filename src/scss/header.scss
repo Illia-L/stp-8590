@@ -136,6 +136,14 @@
   margin-top: 80px;
 }
 
+.mob-nav-elem {
+  transition: color 0.3s ease;
+}
+
+.mob-nav-elem:hover {
+  color: #943db4;
+}
+
 .list-nav-mobile-menu {
   display: flex;
   align-items: flex-start;
@@ -177,6 +185,14 @@
     color: #5c3588;
     text-align: center;
     font-family: 'Montserrat Alternates', sans-serif;
+  }
+
+  .nav-elem {
+    transition: color 0.3s ease;
+  }
+
+  .nav-elem:hover {
+    color: #943db4;
   }
 
   .menu-nav-container {
