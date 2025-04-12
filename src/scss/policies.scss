@@ -17,21 +17,42 @@
   }
 
   &-back {
-    display: inline-block;
+    overflow: hidden;
+    // display: flex;
+    // align-items: center;
+    display: block;
     border-radius: 6px;
     border: 1px solid $_purple_dark;
     width: 100%;
-    padding: 9px;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.2;
     font-size: 18px;
     font-weight: 500;
     text-align: center;
-    background-color: $_pink;
+    background-image: linear-gradient($_white, #dfb4e7);
 
     @include media(desktop) {
-      width: unset;
-      padding: 14px 24px;
+      width: fit-content;
+      // padding: 14px 24px;
+    }
+    
+    & span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background-color: $_pink;
+      padding: 9px;
+      transition: background-color 200ms linear;
+
+      @include media(desktop) {
+        width: fit-content;
+        padding: 14px 24px;
+      }
+    }
+    
+    &:hover span,
+    &:focus span {
+      background-color: transparent;
     }
   }
 
