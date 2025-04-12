@@ -7,7 +7,6 @@ import { globalStylesOptions } from './global.styles';
 
 export default defineConfig(({ command }) => {
   return {
-    base: '/stp-8590/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
