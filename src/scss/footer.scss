@@ -14,7 +14,6 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  //   gap: 36px;
   width: 280px;
   height: auto;
 }
@@ -63,7 +62,8 @@
   transition: color 0.3s ease;
 }
 
-.list-terms a:hover {
+.list-terms a:hover,
+.list-terms a:focus {
   color: #943db4;
 }
 

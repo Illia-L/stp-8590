@@ -8,18 +8,24 @@ const refs = {
 
 function closeMenu() {
   refs.menu.classList.remove('active');
-  refs.menu.classList.add('hidden');
   refs.overlay.classList.remove('active');
-  refs.overlay.classList.add('hidden');
   document.body.style.overflow = '';
+
+  setTimeout(() => {
+    refs.menu.classList.add('hidden');
+    refs.overlay.classList.add('hidden');
+  }, 300);
 }
 
 function openMenu() {
   refs.menu.classList.remove('hidden');
-  refs.menu.classList.add('active');
   refs.overlay.classList.remove('hidden');
-  refs.overlay.classList.add('active');
-  document.body.style.overflow = 'hidden';
+
+  requestAnimationFrame(() => {
+    refs.menu.classList.add('active');
+    refs.overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
 }
 
 refs.btnOpen.addEventListener('click', openMenu);

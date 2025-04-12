@@ -1,5 +1,3 @@
-
-
 .section-title {
   margin: 0 auto;
   width: fit-content;
@@ -15,4 +13,8 @@
     background-image: url('/img/sweetest/title-stone-2x.png'),
       url('/img/sweetest/title-stone-2x.png');
   }
+}
+
+section {
+  scroll-margin-top: 80px;
 }
