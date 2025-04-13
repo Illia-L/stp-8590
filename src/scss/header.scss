@@ -182,8 +182,9 @@
   .list-nav-menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 78px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 56px;
     font-weight: 700;
     font-size: 14px;
     text-align: center;
