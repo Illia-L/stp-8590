@@ -1,4 +1,4 @@
-const btnJoin = document.querySelector('.btn-join');
+const btnJoin = document.querySelector('.hero-cta');
 
 window.addEventListener('load', function () {
   setTimeout(function () {

@@ -85,44 +85,8 @@
   color: #5c3588;
 }
 
-.btn-join {
+.hero-cta {
   visibility: hidden;
-  border: 1px solid #5c3588;
-  border-radius: 6px;
-  width: 184px;
-  height: 47px;
-  background: #ffb9d9;
-  transition: background 0.3s ease;
-}
-
-.btn-join:hover,
-.btn-join:focus {
-  background: linear-gradient(180deg, #fff5fc 14%, #dfb4e7 100%);
-  border: 1px solid #943db4;
-}
-
-.icon-text-svg {
-  fill: #121111;
-}
-
-.btn-content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
-  gap: 7px;
-}
-
-.content-btn-text {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 3px;
-  font-weight: 400;
-  font-size: 10px;
-  text-transform: uppercase;
-  color: #121111;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -194,15 +158,6 @@
 
   .title-crush-candies {
     font-size: 22px;
-  }
-
-  .btn-join {
-    visibility: hidden;
-    border: 1px solid #5c3588;
-    border-radius: 6px;
-    width: 184px;
-    height: 47px;
-    background: #ffb9d9;
   }
 
   .main-text {
