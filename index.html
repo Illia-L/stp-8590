@@ -24,7 +24,7 @@
     />
     
     <script type="module" crossorigin src="/stp-8590/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8590/assets/index-fce1a9db.css">
+    <link rel="stylesheet" href="/stp-8590/assets/index-7282a9bb.css">
   </head>
   <body>
     <header class="header">
@@ -39,7 +39,7 @@
           <img
             src="/stp-8590/assets/Logo-c29d3417.png"
             srcset="/stp-8590/assets/Logo@2x-791993c0.png 2x"
-            alt="Logo"
+            alt="Game Logo"
             class="logo-img"
           />
         </picture>
@@ -47,7 +47,7 @@
     </div>
 
     <div class="menu-icon-container">
-      <button type="button" class="open-nav-btn">
+      <button type="button" class="open-nav-btn" aria-label="Open navigation menu">
         <svg class="icon-elem" width="34" height="24">
           <use href="/stp-8590/assets/sprite-1370b503.svg#icon-Vector"></use>
         </svg>
@@ -81,7 +81,7 @@
   </div>
   <div class="mobile-menu-overlay hidden"></div>
   <div class="mobile-menu hidden">
-    <button type="button" class="close-btn">
+    <button type="button" class="close-btn" aria-label="Close navigation menu">
       <svg class="icon-elem-btn" width="40" height="40">
         <use
           href="/stp-8590/assets/sprite-1370b503.svg#icon-Vector-2"
@@ -154,25 +154,30 @@
         Join the candy fairy on a magical journey through thousands of sweet
         levels. Get ready for a sugar rush of fun!
       </p>
-      <button class="btn-join" type="button">
-        <a
-          href="https://play.google.com/store/apps/details?id=com.cocogames.candymatchroyal&hl=en&gl=us"
-          target="_blank"
-          ><div class="btn-content">
-            <div class="image-btn">
-              <svg class="icon-play-svg" width="21" height="24">
-                <use href="/stp-8590/assets/sprite-1370b503.svg#icon-Playstore"></use>
-              </svg>
-            </div>
-            <div class="content-btn-text">
-              get it on
-              <svg class="icon-text-svg" width="74" height="15">
-                <use href="/stp-8590/assets/sprite-1370b503.svg#icon-path90"></use>
-              </svg>
-            </div>
-          </div>
-        </a>
-      </button>
+
+      <div class="hero-cta">
+        <div class="cta">
+  <a
+    class="cta-link"
+    href="https://play.google.com/store/apps/details?id=com.cocogames.candymatchroyal&hl=en&gl=us"
+    target="_blank"
+  >
+    <div class="cta-content">
+      <svg class="cta-icon-image" width="21" height="24">
+        <use href="/stp-8590/assets/sprite-1370b503.svg#icon-Playstore"></use>
+      </svg>
+
+      <div class="cta-right-box">
+        get it on
+        <svg class="cta-icon-text" width="74" height="15">
+          <use href="/stp-8590/assets/sprite-1370b503.svg#icon-path90"></use>
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+
+      </div>
     </div>
   </div>
   
@@ -361,25 +366,27 @@
       </p>
     </div>
 
-    <button class="btn-join-candy" type="button">
-      <a
-        href="https://play.google.com/store/apps/details?id=com.cocogames.candymatchroyal&hl=en&gl=us"
-        target="_blank"
-        ><div class="btn-content">
-          <div class="image-btn">
-            <svg class="icon-play-svg" width="21" height="24">
-              <use href="/stp-8590/assets/sprite-1370b503.svg#icon-Playstore"></use>
-            </svg>
-          </div>
-          <div class="content-btn-text">
-            get it on
-            <svg class="icon-text-svg" width="74" height="15">
-              <use href="/stp-8590/assets/sprite-1370b503.svg#icon-path90"></use>
-            </svg>
-          </div>
-        </div>
-      </a>
-    </button>
+    <div class="cta">
+  <a
+    class="cta-link"
+    href="https://play.google.com/store/apps/details?id=com.cocogames.candymatchroyal&hl=en&gl=us"
+    target="_blank"
+  >
+    <div class="cta-content">
+      <svg class="cta-icon-image" width="21" height="24">
+        <use href="/stp-8590/assets/sprite-1370b503.svg#icon-Playstore"></use>
+      </svg>
+
+      <div class="cta-right-box">
+        get it on
+        <svg class="cta-icon-text" width="74" height="15">
+          <use href="/stp-8590/assets/sprite-1370b503.svg#icon-path90"></use>
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+
   </div>
 </section>
 
@@ -388,9 +395,9 @@
     <footer class="footer-section">
   <div class="container footer-container">
     <div class="main-content-join">
-      <a href="/stp-8590/">
+      <a href="/stp-8590/" aria-label="Homepage">
         <div class="logo-img-container-footer">
-          <span class="logo-img-footer"></span>
+          <span class="logo-img-footer" role="img" aria-label="Company Logo"></span>
         </div>
       </a>
       <div class="list-terms-container">
