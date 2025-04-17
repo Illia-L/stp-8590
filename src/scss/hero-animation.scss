@@ -1,0 +1,227 @@
+@keyframes fadeBackground {
+  0% {
+    background-image: url(../img/hero/welcomeSectionBefore.png),
+      linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+  }
+  100% {
+    background-image: url(../img/hero/welcomeSection.png),
+      linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+  }
+}
+
+.hero {
+  padding: 40px 20px;
+  height: 779px;
+  margin-top: 60px;
+  background-image: url(../img/hero/welcomeSectionBefore.png);
+  background-size: 100vw;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  animation: fadeBackground 2s ease-in-out forwards;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.titles-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 280px;
+}
+
+.title-enter-candy {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  background: linear-gradient(180deg, #c167ff 0%, #54317f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.title-your-kingdom {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: #5c3588;
+}
+
+.content-join {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title-crush-candies {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  color: #5c3588;
+}
+
+.main-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 4px;
+  color: #5c3588;
+}
+
+.hero-cta {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    min-height: 865px;
+    margin-top: 86px;
+    padding: 40px 80px 80px 80px;
+    background: url(../img/hero-animation/upper-cloud-right.png),
+      url(../img/hero-animation/upper-cloud-left.png),
+      url(../img/hero-animation/treetop-right.png),
+      url(../img/hero-animation/treetop-left.png),
+      url(../img/hero-animation/grass.png),
+      url(../img/hero-animation/4-fore-candies.png),
+      url(../img/hero-animation/fore-hills.png),
+      url(../img/hero-animation/one-round-candy.png),
+      url(../img/hero-animation/two-round-candies.png),
+      url(../img/hero-animation/rare-hills.png),
+      url(../img/hero-animation/two-rare-candies.png),
+      url(../img/hero-animation/low-left-clouds.png),
+      url(../img/hero-animation/low-right-cloud.png),
+      linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    background-size: 16.8%, 16.3%, 20%, 26%, 100%, 100%, 100%, 9.5%, 21.6%, 100%,
+      11%, 100%, 40.4%, 100%;
+    background-position: right -15vw bottom 55.1vw, left -15vw bottom 55.6vw,
+      right bottom 30.3vw, left bottom 28vw, bottom, left bottom -11vw, bottom,
+      left 30% bottom -3vw, right 34% bottom -3.8vw, bottom,
+      left 26% bottom 3.6vw, left bottom -4.2vw, right bottom 6vw, bottom;
+    background-repeat: no-repeat;
+    animation: animateBackground 2s ease-in-out forwards;
+  }
+
+  @keyframes animateBackground {
+    50% {
+      background-position: right bottom 55.1vw, left bottom 55.6vw,
+        right bottom 30.3vw, left bottom 29.5vw, bottom, bottom, bottom,
+        left 30% bottom 0.1vw, right 34% bottom 2.5vw, bottom,
+        left 26% bottom 13vw, left bottom 0.5vw, right bottom 12.1vw, bottom;
+      background-size: 16.8%, 16.3%, 26%, 26%, 100%, 100%, 100%, 9.5%, 21.6%,
+        100%, 11%, 100%, 40.4%, 100%;
+    }
+    100% {
+      background-position: right -2vw bottom 55.1vw, left -2vw bottom 55.6vw,
+        right bottom 30.3vw, left bottom 29vw, bottom, left bottom -0.5vw,
+        bottom, left 30% bottom, right 34% bottom 2.2vw, bottom,
+        left 26% bottom 11.3vw, bottom, right bottom 12vw, bottom;
+      background-size: 16.8%, 16.3%, 24.8%, 26%, 100%, 100%, 100%, 9.5%, 21.6%,
+        100%, 11%, 100%, 40.4%, 100%;
+    }
+  }
+
+  .hero-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .titles-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    width: 1040px;
+  }
+
+  .title-enter-candy {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .title-your-kingdom {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    color: #5c3588;
+  }
+
+  .content-join {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    width: 996px;
+    min-height: 84px;
+  }
+
+  .title-crush-candies {
+    font-size: 22px;
+  }
+
+  .main-text {
+    font-size: 18px;
+    width: 616px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 1200px) {
+  @keyframes fadeBackground {
+    0% {
+      background-image: url(../img/hero/welcomeSectionBefore@2x.png),
+        linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    }
+    100% {
+      background-image: url(../img/hero/welcomeSection@2x.png),
+        linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    }
+  }
+  .hero {
+    background-image: url(../img/hero/welcomeSection@2x.png);
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1200px) {
+  @keyframes fadeBackground {
+    0% {
+      background-image: url(../img/hero/candyKingdomBefore@2x.png),
+        linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    }
+    100% {
+      background-image: url(../img/hero/welcomeDesc@2x.png),
+        linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    }
+  }
+  .hero {
+    background: url(../img/hero/welcomeDesc@2x.png) no-repeat bottom center,
+      linear-gradient(180deg, #d2ccee 55.9%, #c166fd 100%);
+    background-size: contain;
+    background-size: 100vw;
+  }
+}
